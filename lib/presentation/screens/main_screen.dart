@@ -1,6 +1,6 @@
 import 'package:bottom_navigation_app/presentation/views/homes_view.dart';
 import 'package:bottom_navigation_app/presentation/views/users_view.dart';
-import 'package:bottom_navigation_app/presentation/views/settings_view.dart';
+import 'package:bottom_navigation_app/presentation/views/seccions_view.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -17,7 +17,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     final colors = Color.fromARGB(255, 58, 166, 255);
 
-    final screens = [const HomesView(), const UsersView(), const SettingsView()];
+    final screens = [const HomesView(), const UsersView(), const SeccionsView()];
 
     return Scaffold(
       
@@ -49,9 +49,9 @@ class _MainScreenState extends State<MainScreen> {
             backgroundColor: colors,
           ),
           BottomNavigationBarItem(
-            icon: const Icon(Icons.settings_outlined),
-            activeIcon: const Icon(Icons.settings),
-            label: 'Settings',
+            icon: const Icon(Icons.grid_view_sharp),
+            activeIcon: const Icon(Icons.grid_view_outlined),
+            label: 'Secciones',
             backgroundColor: colors,
           ),
         ],

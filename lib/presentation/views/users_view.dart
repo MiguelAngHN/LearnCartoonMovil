@@ -60,9 +60,8 @@ class UserList extends StatelessWidget {
                   subtitle: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Email: ${userData['email'] ?? ''}'),
-                      Text('Password: ${userData['password'] ?? ''}'),
-                      
+                      Text('- Email: ${userData['email'] ?? ''}'),
+                      Text('- Password: ${userData['password'] ?? ''}'),
                     ],
                   ),
                 );

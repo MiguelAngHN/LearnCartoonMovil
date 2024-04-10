@@ -71,7 +71,7 @@ class _HomesViewState extends State<HomesView> {
                   ),
                 ),
               ),
-              SizedBox(height: 20), // Espacio entre las secciones
+              SizedBox(height: 20),
               Container(
                 width: 400,
                 padding: const EdgeInsets.all(8.0),
@@ -86,7 +86,7 @@ class _HomesViewState extends State<HomesView> {
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(10),
                           child: Image.asset(
-                            'assets/Niños.gif', // Ruta de tu otra imagen
+                            'assets/Niños.gif',
                             height: 150,
                             width: 300,
                             fit: BoxFit.fill,
@@ -116,7 +116,7 @@ class _HomesViewState extends State<HomesView> {
           children: <Widget>[
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 148, 255, 191),
+                color: const Color.fromARGB(255, 58, 166, 255),
               ),
               child: Text(
                 'Menu',
@@ -130,15 +130,15 @@ class _HomesViewState extends State<HomesView> {
               decoration: BoxDecoration(
                 border: Border(
                   bottom: BorderSide(
-                    color: Colors.green, // Color del borde inferior
-                    width: 2.0, // Ancho del borde inferior
+                    color: Color.fromARGB(255, 35, 214, 41),
+                    width: 2.0,
                   ),
                 ),
               ),
               child: ListTile(
                 title: Text('Registrarme'),
                 onTap: () {
-                  Navigator.pop(context); // Cierra el Drawer
+                  Navigator.pop(context);
                 },
               ),
             ),
@@ -146,7 +146,7 @@ class _HomesViewState extends State<HomesView> {
               decoration: BoxDecoration(
                 border: Border(
                   bottom: BorderSide(
-                    color: Colors.green,
+                    color: Color.fromARGB(255, 35, 214, 41),
                     width: 2.0,
                   ),
                 ),
@@ -162,7 +162,6 @@ class _HomesViewState extends State<HomesView> {
                 },
               ),
             ),
-            // Agrega más ListTile según sea necesario
           ],
         ),
       ),
