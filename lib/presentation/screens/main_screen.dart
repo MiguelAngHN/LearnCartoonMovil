@@ -1,5 +1,6 @@
-import 'package:bottom_navigation_app/presentation/views/motors_view.dart';
+import 'package:bottom_navigation_app/presentation/views/homes_view.dart';
 import 'package:bottom_navigation_app/presentation/views/users_view.dart';
+import 'package:bottom_navigation_app/presentation/views/settings_view.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -14,9 +15,9 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final colors = Theme.of(context).colorScheme;
+    final colors = Color.fromARGB(255, 58, 166, 255);
 
-    final screens = [const MotorsView(), const UsersView()];
+    final screens = [const HomesView(), const UsersView(), const SettingsView()];
 
     return Scaffold(
       
@@ -36,16 +37,22 @@ class _MainScreenState extends State<MainScreen> {
         elevation: 0,
         items: [
           BottomNavigationBarItem(
-            icon: const Icon(Icons.two_wheeler),
-            activeIcon: const Icon(Icons.motorcycle),
-            label: 'Motors',
-            backgroundColor: colors.primary,
+            icon: const Icon(Icons.home),
+            activeIcon: const Icon(Icons.home),
+            label: 'Inicio',
+            backgroundColor: colors,
           ),
           BottomNavigationBarItem(
-            icon: const Icon(Icons.person_3_outlined),
+            icon: const Icon(Icons.person_outlined),
             activeIcon: const Icon(Icons.person_3),
-            label: 'Users',
-            backgroundColor: colors.tertiary,
+            label: 'Usuario',
+            backgroundColor: colors,
+          ),
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.settings_outlined),
+            activeIcon: const Icon(Icons.settings),
+            label: 'Settings',
+            backgroundColor: colors,
           ),
         ],
       ),

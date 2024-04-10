@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
+      title: 'Learn Cartoon',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
